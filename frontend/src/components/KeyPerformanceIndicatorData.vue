@@ -15,7 +15,7 @@ const formatNumber = (number) => new Intl.NumberFormat('nl-NL').format(number)
 
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/stats/kpi')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/stats/kpi')
     const result = await response.json()
 
     if (!response.ok || !result.success) {

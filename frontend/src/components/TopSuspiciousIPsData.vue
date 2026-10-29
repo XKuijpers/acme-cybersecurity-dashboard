@@ -53,7 +53,7 @@ const errorMessage = ref('')
 
 async function fetchTopSuspiciousIPs() {
   try {
-    const response = await fetch('http://localhost:3000/api/stats/top-suspicious-ips')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/stats/top-suspicious-ips')
 
     const result = await response.json()
 

@@ -54,7 +54,7 @@ const errorMessage = ref('')
 
 async function fetchAttemptsPerCountry() {
   try {
-    const response = await fetch('http://localhost:3000/api/stats/attempts-per-country')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/stats/attempts-per-country')
 
     const result = await response.json()
 

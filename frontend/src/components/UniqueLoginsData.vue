@@ -60,7 +60,7 @@ const errorMessage = ref('')
 
 async function fetchUniqueLoginStats() {
   try {
-    const response = await fetch('http://localhost:3000/api/stats/unique-logins')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/stats/unique-logins')
     const result = await response.json()
 
     if (!response.ok || !result.success) {

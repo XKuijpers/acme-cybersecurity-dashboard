@@ -36,7 +36,7 @@ function formatDate(dateString) {
 
 async function markAsRead(alert) {
   try {
-    const response = await fetch(`http://localhost:3000/api/alerts/${alert.id}/read`, {
+    const response = await fetch(`https://acme-cybersecurity-backend.vercel.app/api/alerts/${alert.id}/read`, {
       method: 'PATCH',
     })
 
@@ -56,7 +56,7 @@ async function markAsRead(alert) {
 // Runs when component is fully loaded in DOM
 onMounted(async () => {
   try {
-    const response = await fetch('http://localhost:3000/api/alerts')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/alerts')
 
     const result = await response.json()
 

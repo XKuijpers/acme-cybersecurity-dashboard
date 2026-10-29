@@ -36,7 +36,7 @@ const errorMessage = ref('')
 
 async function fetchLoginAttemptStats() {
   try {
-    const response = await fetch('http://localhost:3000/api/stats/login-attempts')
+    const response = await fetch('https://acme-cybersecurity-backend.vercel.app/api/stats/login-attempts')
 
     const result = await response.json()
 
